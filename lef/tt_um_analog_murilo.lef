@@ -431,6 +431,11 @@ MACRO tt_um_analog_murilo
         RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
+  OBS
+      LAYER met4 ;
+        RECT 132.490 1.400 152.710 11.000 ;
+        RECT 133.790 1.000 151.410 1.400 ;
+  END
 END tt_um_analog_murilo
 END LIBRARY
 
