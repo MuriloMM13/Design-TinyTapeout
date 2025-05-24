@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1748098842
+timestamp 1748119022
 << nwell >>
 rect -19 130 160 291
 << pwell >>
@@ -136,15 +136,6 @@ rect 32 -9 60 9
 rect 78 -9 106 9
 rect 124 -9 160 9
 rect -19 -24 160 -9
-<< labels >>
-flabel locali 14 109 34 128 0 FreeSans 80 0 0 0 A
-port 1 nsew signal input
-flabel locali 118 109 138 128 0 FreeSans 80 0 0 0 Y
-port 2 nsew signal output
-flabel locali 13 263 14 281 0 FreeSans 80 0 0 0 VPWR
-port 3 nsew power bidirectional abutment
-flabel locali 32 -9 33 10 0 FreeSans 80 0 0 0 VGND
-port 4 nsew power bidirectional abutment
 << properties >>
 string LEFclass CORE
 string LEForigin 0 0
