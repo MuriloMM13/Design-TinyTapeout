@@ -34,7 +34,7 @@ MACRO tt_um_analog_murilo
   PIN ua[0]
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.426400 ;
+    ANTENNADIFFAREA 0.442800 ;
     PORT
       LAYER met4 ;
         RECT 151.810 0.000 152.710 1.000 ;
