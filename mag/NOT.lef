@@ -10,15 +10,15 @@ MACRO NOT
   SITE unithd ;
   PIN VGND
     DIRECTION INOUT ;
-    USE POWER ;
+    USE GROUND ;
     PORT
       LAYER met1 ;
-        RECT -0.790 -0.120 -0.550 0.120 ;
+        RECT -0.870 -0.240 -0.390 0.240 ;
     END
   END VGND
   PIN VDPWR
     DIRECTION INOUT ;
-    USE GROUND ;
+    USE POWER ;
     PORT
       LAYER nwell ;
         RECT -0.870 3.310 1.600 4.910 ;
@@ -36,7 +36,7 @@ MACRO NOT
     ANTENNAGATEAREA 0.246000 ;
     PORT
       LAYER met1 ;
-        RECT -0.790 2.050 -0.550 2.290 ;
+        RECT -0.870 1.930 -0.390 2.410 ;
     END
   END A
   PIN Y
@@ -48,7 +48,7 @@ MACRO NOT
         RECT 0.720 3.490 1.060 4.460 ;
         RECT 0.810 3.160 1.060 3.490 ;
       LAYER met1 ;
-        RECT 1.330 2.060 1.570 2.300 ;
+        RECT 1.120 1.940 1.600 2.420 ;
     END
   END Y
   OBS
@@ -66,18 +66,7 @@ MACRO NOT
         RECT 0.720 0.260 1.060 0.890 ;
         RECT 0.000 -0.090 1.380 0.090 ;
       LAYER met1 ;
-        RECT -0.870 2.290 -0.500 2.330 ;
-        RECT -0.870 2.050 -0.790 2.290 ;
-        RECT -0.550 2.050 -0.500 2.290 ;
-        RECT -0.870 2.010 -0.500 2.050 ;
-        RECT 1.280 2.300 1.600 2.320 ;
-        RECT 1.280 2.060 1.330 2.300 ;
-        RECT 1.570 2.060 1.600 2.300 ;
-        RECT 1.280 2.040 1.600 2.060 ;
-        RECT -0.870 0.120 1.600 0.240 ;
-        RECT -0.870 -0.120 -0.790 0.120 ;
-        RECT -0.550 -0.120 1.600 0.120 ;
-        RECT -0.870 -0.240 1.600 -0.120 ;
+        RECT -0.390 -0.240 1.600 0.240 ;
   END
 END NOT
 END LIBRARY

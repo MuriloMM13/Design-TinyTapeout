@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1748436552
+timestamp 1748439009
 << nwell >>
 rect -87 331 160 491
 << pwell >>
@@ -74,14 +74,14 @@ rect -16 361 2 379
 << poly >>
 rect 60 448 75 461
 rect 60 233 75 349
-rect -87 226 75 233
-rect -87 209 -75 226
-rect -58 209 75 226
-rect -87 201 75 209
+rect -87 228 75 233
+rect -87 211 -75 228
+rect -58 211 75 228
+rect -87 201 75 211
 rect 60 89 75 201
 rect 60 11 75 24
 << polycont >>
-rect -75 209 -58 226
+rect -75 211 -58 228
 << locali >>
 rect 0 463 14 481
 rect 32 463 60 481
@@ -107,10 +107,10 @@ rect 72 374 106 391
 rect 72 357 81 374
 rect 98 357 106 374
 rect 72 349 106 357
-rect -87 226 -50 233
-rect -87 209 -75 226
-rect -58 209 -50 226
-rect -87 201 -50 209
+rect -87 228 -50 233
+rect -87 211 -75 228
+rect -58 211 -50 228
+rect -87 201 -50 211
 rect 81 228 106 349
 rect 128 228 160 232
 rect 81 227 160 228
@@ -143,7 +143,7 @@ rect 124 -9 138 9
 rect 14 463 32 481
 rect 60 463 78 481
 rect 106 463 124 481
-rect -75 209 -58 226
+rect -75 211 -58 228
 rect 136 210 153 227
 rect 14 -9 32 9
 rect 60 -9 78 9
@@ -155,14 +155,14 @@ rect 32 463 60 481
 rect 78 463 106 481
 rect 124 463 160 481
 rect -87 448 160 463
-rect -87 226 -50 233
-rect -87 209 -75 226
-rect -58 209 -50 226
-rect -87 201 -50 209
-rect 128 227 160 232
-rect 128 210 136 227
+rect -87 228 -39 241
+rect -87 211 -75 228
+rect -58 211 -39 228
+rect -87 193 -39 211
+rect 112 227 160 242
+rect 112 210 136 227
 rect 153 210 160 227
-rect 128 204 160 210
+rect 112 194 160 210
 rect -87 9 160 24
 rect -87 -9 14 9
 rect 32 -9 60 9
@@ -170,14 +170,14 @@ rect 78 -9 106 9
 rect 124 -9 160 9
 rect -87 -24 160 -9
 << labels >>
-flabel metal1 -79 -12 -55 12 0 FreeSans 80 0 0 0 VGND
-port 4 nsew power bidirectional
-flabel metal1 -77 461 -53 485 0 FreeSans 80 0 0 0 VDPWR
-port 5 nsew ground bidirectional
-flabel metal1 -79 205 -55 229 0 FreeSans 80 0 0 0 A
-port 8 nsew signal input
-flabel metal1 133 206 157 230 0 FreeSans 80 0 0 0 Y
-port 9 nsew signal output
+flabel metal1 -87 -24 -39 24 0 FreeSans 80 0 0 0 VGND
+port 10 nsew ground bidirectional
+flabel metal1 -87 448 -39 496 0 FreeSans 80 0 0 0 VDPWR
+port 11 nsew power bidirectional
+flabel metal1 -87 193 -39 241 0 FreeSans 80 0 0 0 A
+port 12 nsew signal input
+flabel metal1 112 194 160 242 0 FreeSans 80 0 0 0 Y
+port 13 nsew signal output
 << properties >>
 string FIXED_BBOX -107 -44 180 316
 string GDS_FILEBOUNDARY true
