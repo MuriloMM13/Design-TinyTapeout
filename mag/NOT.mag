@@ -1,12 +1,11 @@
 magic
 tech sky130A
-timestamp 1748866655
+timestamp 1748871230
 << nwell >>
 rect -87 331 160 491
 << pwell >>
-rect -87 24 160 100
-rect -88 -10 160 24
-rect -39 -19 160 -10
+rect -87 -15 160 100
+rect -39 -19 160 -15
 << scnmos >>
 rect 60 24 75 89
 << scpmoshvt >>
@@ -165,21 +164,21 @@ rect 112 227 160 242
 rect 112 209 127 227
 rect 145 209 160 227
 rect 112 194 160 209
-rect -88 9 160 24
-rect -88 -9 14 9
+rect -87 9 160 24
+rect -87 -9 14 9
 rect 32 -9 60 9
 rect 78 -9 106 9
 rect 124 -9 160 9
-rect -88 -24 160 -9
+rect -87 -24 160 -9
 << labels >>
-rlabel metal1 -87 448 -39 496 1 PDWR
-port 14 n default feedthrough
-rlabel metal1 -88 -24 -40 24 1 VGND
-port 15 n default feedthrough
+rlabel metal1 -87 -24 -39 24 1 VGND
+port 18 nsew ground bidirectional
+rlabel metal1 -87 448 -39 496 1 VDPWR
+port 19 nsew power bidirectional
 rlabel metal1 -87 193 -39 241 1 A
-port 16 n default input
+port 20 nsew signal input
 rlabel metal1 112 194 160 242 1 Y
-port 17 n default output
+port 21 nsew signal output
 << properties >>
 string FIXED_BBOX -107 -44 180 316
 string GDS_FILEBOUNDARY true

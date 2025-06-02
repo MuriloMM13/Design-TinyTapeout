@@ -8,9 +8,17 @@ MACRO NOT
   ORIGIN 1.070 0.440 ;
   SIZE 2.870 BY 3.600 ;
   SITE unithd ;
-  PIN PDWR
-    DIRECTION FEEDTHRU ;
-    ANTENNADIFFAREA 0.663300 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met1 ;
+        RECT -0.870 -0.240 -0.390 0.240 ;
+    END
+  END VGND
+  PIN VDPWR
+    DIRECTION INOUT ;
+    USE POWER ;
     PORT
       LAYER nwell ;
         RECT -0.870 3.310 1.600 4.910 ;
@@ -21,17 +29,10 @@ MACRO NOT
       LAYER met1 ;
         RECT -0.870 4.480 1.600 4.960 ;
     END
-  END PDWR
-  PIN VGND
-    DIRECTION FEEDTHRU ;
-    ANTENNADIFFAREA 0.435500 ;
-    PORT
-      LAYER met1 ;
-        RECT -0.880 -0.240 -0.400 0.240 ;
-    END
-  END VGND
+  END VDPWR
   PIN A
     DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 0.246000 ;
     PORT
       LAYER met1 ;
@@ -40,6 +41,7 @@ MACRO NOT
   END A
   PIN Y
     DIRECTION OUTPUT ;
+    USE SIGNAL ;
     ANTENNADIFFAREA 0.442800 ;
     PORT
       LAYER li1 ;
@@ -51,9 +53,8 @@ MACRO NOT
   END Y
   OBS
       LAYER pwell ;
-        RECT -0.870 0.240 1.600 1.000 ;
-        RECT -0.880 -0.100 1.600 0.240 ;
-        RECT -0.390 -0.190 1.600 -0.100 ;
+        RECT -0.870 -0.150 1.600 1.000 ;
+        RECT -0.390 -0.190 1.600 -0.150 ;
       LAYER li1 ;
         RECT 0.810 2.420 1.060 3.160 ;
         RECT -0.870 1.930 -0.390 2.410 ;
@@ -64,7 +65,7 @@ MACRO NOT
         RECT 0.720 0.260 1.060 0.890 ;
         RECT 0.000 -0.090 1.380 0.090 ;
       LAYER met1 ;
-        RECT -0.400 -0.240 1.600 0.240 ;
+        RECT -0.390 -0.240 1.600 0.240 ;
   END
 END NOT
 END LIBRARY

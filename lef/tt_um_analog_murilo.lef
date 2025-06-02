@@ -539,7 +539,7 @@ MACRO tt_um_analog_murilo
   END VGND
   OBS
       LAYER nwell ;
-        RECT 140.060 8.240 142.540 13.340 ;
+        RECT 140.070 8.240 142.540 13.340 ;
       LAYER li1 ;
         RECT 140.070 8.340 142.540 13.240 ;
       LAYER met1 ;
