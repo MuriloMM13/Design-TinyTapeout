@@ -1,10 +1,12 @@
 magic
 tech sky130A
-timestamp 1748439009
+timestamp 1748866655
 << nwell >>
 rect -87 331 160 491
 << pwell >>
-rect -87 -19 160 100
+rect -87 24 160 100
+rect -88 -10 160 24
+rect -39 -19 160 -10
 << scnmos >>
 rect 60 24 75 89
 << scpmoshvt >>
@@ -73,15 +75,17 @@ rect -20 59 -2 77
 rect -16 361 2 379
 << poly >>
 rect 60 448 75 461
+rect -87 233 -39 241
 rect 60 233 75 349
-rect -87 228 75 233
-rect -87 211 -75 228
-rect -58 211 75 228
-rect -87 201 75 211
+rect -87 226 75 233
+rect -87 208 -72 226
+rect -54 208 75 226
+rect -87 201 75 208
+rect -87 193 -39 201
 rect 60 89 75 201
 rect 60 11 75 24
 << polycont >>
-rect -75 211 -58 228
+rect -72 208 -54 226
 << locali >>
 rect 0 463 14 481
 rect 32 463 60 481
@@ -107,19 +111,17 @@ rect 72 374 106 391
 rect 72 357 81 374
 rect 98 357 106 374
 rect 72 349 106 357
-rect -87 228 -50 233
-rect -87 211 -75 228
-rect -58 211 -50 228
-rect -87 201 -50 211
-rect 81 228 106 349
-rect 128 228 160 232
-rect 81 227 160 228
-rect 81 210 136 227
-rect 153 210 160 227
-rect 81 208 160 210
+rect 81 242 106 349
+rect -87 226 -39 241
+rect -87 208 -72 226
+rect -54 208 -39 226
+rect -87 193 -39 208
+rect 81 227 160 242
+rect 81 209 127 227
+rect 145 209 160 227
+rect 81 194 160 209
 rect -33 83 54 91
-rect 81 89 106 208
-rect 128 204 160 208
+rect 81 89 106 194
 rect -33 77 37 83
 rect -33 59 -20 77
 rect -2 66 37 77
@@ -143,8 +145,8 @@ rect 124 -9 138 9
 rect 14 463 32 481
 rect 60 463 78 481
 rect 106 463 124 481
-rect -75 211 -58 228
-rect 136 210 153 227
+rect -72 208 -54 226
+rect 127 209 145 227
 rect 14 -9 32 9
 rect 60 -9 78 9
 rect 106 -9 124 9
@@ -155,29 +157,29 @@ rect 32 463 60 481
 rect 78 463 106 481
 rect 124 463 160 481
 rect -87 448 160 463
-rect -87 228 -39 241
-rect -87 211 -75 228
-rect -58 211 -39 228
-rect -87 193 -39 211
+rect -87 226 -39 241
+rect -87 208 -72 226
+rect -54 208 -39 226
+rect -87 193 -39 208
 rect 112 227 160 242
-rect 112 210 136 227
-rect 153 210 160 227
-rect 112 194 160 210
-rect -87 9 160 24
-rect -87 -9 14 9
+rect 112 209 127 227
+rect 145 209 160 227
+rect 112 194 160 209
+rect -88 9 160 24
+rect -88 -9 14 9
 rect 32 -9 60 9
 rect 78 -9 106 9
 rect 124 -9 160 9
-rect -87 -24 160 -9
+rect -88 -24 160 -9
 << labels >>
-flabel metal1 -87 -24 -39 24 0 FreeSans 80 0 0 0 VGND
-port 10 nsew ground bidirectional
-flabel metal1 -87 448 -39 496 0 FreeSans 80 0 0 0 VDPWR
-port 11 nsew power bidirectional
-flabel metal1 -87 193 -39 241 0 FreeSans 80 0 0 0 A
-port 12 nsew signal input
-flabel metal1 112 194 160 242 0 FreeSans 80 0 0 0 Y
-port 13 nsew signal output
+rlabel metal1 -87 448 -39 496 1 PDWR
+port 14 n default feedthrough
+rlabel metal1 -88 -24 -40 24 1 VGND
+port 15 n default feedthrough
+rlabel metal1 -87 193 -39 241 1 A
+port 16 n default input
+rlabel metal1 112 194 160 242 1 Y
+port 17 n default output
 << properties >>
 string FIXED_BBOX -107 -44 180 316
 string GDS_FILEBOUNDARY true
