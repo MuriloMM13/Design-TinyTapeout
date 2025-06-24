@@ -1,14 +1,14 @@
 magic
 tech sky130A
-timestamp 1750766911
+timestamp 1750779130
 << nwell >>
-rect -87 331 160 592
+rect -87 331 160 604
 << pwell >>
 rect -87 -23 160 100
 << scnmos >>
 rect 60 24 75 89
 << scpmoshvt >>
-rect 60 349 75 549
+rect 60 349 75 561
 << ndiff >>
 rect 33 83 60 89
 rect 33 66 37 83
@@ -25,7 +25,7 @@ rect 75 32 81 49
 rect 98 32 102 49
 rect 75 24 102 32
 << pdiff >>
-rect 33 526 60 549
+rect 33 526 60 561
 rect 33 509 37 526
 rect 54 509 60 526
 rect 33 492 60 509
@@ -41,7 +41,7 @@ rect 33 390 60 407
 rect 33 373 37 390
 rect 54 373 60 390
 rect 33 349 60 373
-rect 75 526 102 549
+rect 75 526 102 561
 rect 75 509 81 526
 rect 98 509 102 526
 rect 75 492 102 509
@@ -79,7 +79,7 @@ rect -34 59 -20 77
 rect -2 59 6 77
 rect -34 24 6 59
 << nsubdiff >>
-rect -34 379 6 549
+rect -34 379 6 561
 rect -34 361 -16 379
 rect 2 361 6 379
 rect -34 349 6 361
@@ -88,7 +88,7 @@ rect -20 59 -2 77
 << nsubdiffcont >>
 rect -16 361 2 379
 << poly >>
-rect 60 549 75 562
+rect 60 561 75 574
 rect -87 233 -39 241
 rect 60 233 75 349
 rect -87 226 75 233
@@ -101,11 +101,11 @@ rect 60 11 75 24
 << polycont >>
 rect -72 208 -54 226
 << locali >>
-rect 0 564 14 582
-rect 32 564 60 582
-rect 78 564 106 582
-rect 124 564 138 582
-rect 31 526 54 564
+rect 0 576 14 594
+rect 32 576 60 594
+rect 78 576 106 594
+rect 124 576 138 594
+rect 31 526 54 576
 rect 31 509 37 526
 rect 31 492 54 509
 rect 31 475 37 492
@@ -167,21 +167,21 @@ rect 32 -9 60 9
 rect 78 -9 106 9
 rect 124 -9 138 9
 << viali >>
-rect 14 564 32 582
-rect 60 564 78 582
-rect 106 564 124 582
+rect 14 576 32 594
+rect 60 576 78 594
+rect 106 576 124 594
 rect -72 208 -54 226
 rect 121 209 139 227
 rect 14 -9 32 9
 rect 60 -9 78 9
 rect 106 -9 124 9
 << metal1 >>
-rect -87 582 160 597
-rect -87 564 14 582
-rect 32 564 60 582
-rect 78 564 106 582
-rect 124 564 160 582
-rect -87 549 160 564
+rect -87 594 160 609
+rect -87 576 14 594
+rect 32 576 60 594
+rect 78 576 106 594
+rect 124 576 160 594
+rect -87 561 160 576
 rect -87 226 -39 241
 rect -87 208 -72 226
 rect -54 208 -39 226
@@ -203,7 +203,7 @@ flabel metal1 -87 193 -39 241 1 FreeSans 200 0 0 0 A
 port 24 nsew signal input
 flabel metal1 112 194 160 242 1 FreeSans 200 0 0 0 Y
 port 25 nsew signal output
-flabel metal1 -87 549 -39 597 1 FreeSans 200 0 0 0 VDPWR
+flabel metal1 -87 561 -39 609 1 FreeSans 200 0 0 0 VDPWR
 port 23 nsew power bidirectional
 << properties >>
 string FIXED_BBOX -107 -44 180 316
