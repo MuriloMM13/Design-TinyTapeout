@@ -1,14 +1,15 @@
 magic
 tech sky130A
-timestamp 1750766911
+timestamp 1748873592
 << nwell >>
-rect -87 331 160 592
+rect -87 331 160 491
 << pwell >>
-rect -87 -23 160 100
+rect -87 -11 160 100
+rect -39 -19 160 -11
 << scnmos >>
 rect 60 24 75 89
 << scpmoshvt >>
-rect 60 349 75 549
+rect 60 349 75 448
 << ndiff >>
 rect 33 83 60 89
 rect 33 66 37 83
@@ -25,61 +26,45 @@ rect 75 32 81 49
 rect 98 32 102 49
 rect 75 24 102 32
 << pdiff >>
-rect 33 526 60 549
-rect 33 509 37 526
-rect 54 509 60 526
-rect 33 492 60 509
-rect 33 475 37 492
-rect 54 475 60 492
-rect 33 458 60 475
-rect 33 441 37 458
-rect 54 441 60 458
-rect 33 424 60 441
-rect 33 407 37 424
-rect 54 407 60 424
-rect 33 390 60 407
-rect 33 373 37 390
-rect 54 373 60 390
-rect 33 349 60 373
-rect 75 526 102 549
-rect 75 509 81 526
-rect 98 509 102 526
-rect 75 492 102 509
-rect 75 475 81 492
-rect 98 475 102 492
-rect 75 458 102 475
-rect 75 441 81 458
-rect 98 441 102 458
-rect 75 424 102 441
-rect 75 407 81 424
-rect 98 407 102 424
-rect 75 390 102 407
-rect 75 373 81 390
-rect 98 373 102 390
-rect 75 349 102 373
+rect 33 442 60 448
+rect 33 425 37 442
+rect 54 425 60 442
+rect 33 408 60 425
+rect 33 391 37 408
+rect 54 391 60 408
+rect 33 374 60 391
+rect 33 357 37 374
+rect 54 357 60 374
+rect 33 349 60 357
+rect 75 442 102 448
+rect 75 425 81 442
+rect 98 425 102 442
+rect 75 408 102 425
+rect 75 391 81 408
+rect 98 391 102 408
+rect 75 374 102 391
+rect 75 357 81 374
+rect 98 357 102 374
+rect 75 349 102 357
 << ndiffc >>
 rect 37 66 54 83
 rect 37 32 54 49
 rect 81 66 98 83
 rect 81 32 98 49
 << pdiffc >>
-rect 37 509 54 526
-rect 37 475 54 492
-rect 37 441 54 458
-rect 37 407 54 424
-rect 37 373 54 390
-rect 81 509 98 526
-rect 81 475 98 492
-rect 81 441 98 458
-rect 81 407 98 424
-rect 81 373 98 390
+rect 37 425 54 442
+rect 37 391 54 408
+rect 37 357 54 374
+rect 81 425 98 442
+rect 81 391 98 408
+rect 81 357 98 374
 << psubdiff >>
 rect -34 77 6 89
 rect -34 59 -20 77
 rect -2 59 6 77
 rect -34 24 6 59
 << nsubdiff >>
-rect -34 379 6 549
+rect -34 379 6 448
 rect -34 361 -16 379
 rect 2 361 6 379
 rect -34 349 6 361
@@ -88,7 +73,7 @@ rect -20 59 -2 77
 << nsubdiffcont >>
 rect -16 361 2 379
 << poly >>
-rect 60 549 75 562
+rect 60 448 75 461
 rect -87 233 -39 241
 rect 60 233 75 349
 rect -87 226 75 233
@@ -101,41 +86,30 @@ rect 60 11 75 24
 << polycont >>
 rect -72 208 -54 226
 << locali >>
-rect 0 564 14 582
-rect 32 564 60 582
-rect 78 564 106 582
-rect 124 564 138 582
-rect 31 526 54 564
-rect 31 509 37 526
-rect 31 492 54 509
-rect 31 475 37 492
-rect 31 458 54 475
-rect 31 441 37 458
-rect 31 424 54 441
-rect 31 407 37 424
-rect 31 390 54 407
-rect 31 387 37 390
-rect -33 379 37 387
-rect -33 361 -16 379
-rect 2 373 37 379
-rect 2 361 54 373
-rect -33 349 54 361
-rect 72 526 106 534
-rect 72 509 81 526
-rect 98 509 106 526
-rect 72 492 106 509
-rect 72 475 81 492
-rect 98 475 106 492
-rect 72 458 106 475
-rect 72 441 81 458
-rect 98 441 106 458
-rect 72 424 106 441
-rect 72 407 81 424
-rect 98 407 106 424
-rect 72 390 106 407
-rect 72 373 81 390
-rect 98 373 106 390
-rect 72 349 106 373
+rect 0 463 14 481
+rect 32 463 60 481
+rect 78 463 106 481
+rect 124 463 138 481
+rect 31 442 54 463
+rect 31 425 37 442
+rect 31 408 54 425
+rect 31 391 37 408
+rect 31 387 54 391
+rect -16 379 54 387
+rect 2 374 54 379
+rect 2 361 37 374
+rect -16 357 37 361
+rect -16 349 54 357
+rect 72 442 106 446
+rect 72 425 81 442
+rect 98 425 106 442
+rect 72 408 106 425
+rect 72 391 81 408
+rect 98 391 106 408
+rect 72 374 106 391
+rect 72 357 81 374
+rect 98 357 106 374
+rect 72 349 106 357
 rect 81 242 106 349
 rect -87 226 -39 241
 rect -87 208 -72 226
@@ -167,21 +141,21 @@ rect 32 -9 60 9
 rect 78 -9 106 9
 rect 124 -9 138 9
 << viali >>
-rect 14 564 32 582
-rect 60 564 78 582
-rect 106 564 124 582
+rect 14 463 32 481
+rect 60 463 78 481
+rect 106 463 124 481
 rect -72 208 -54 226
 rect 121 209 139 227
 rect 14 -9 32 9
 rect 60 -9 78 9
 rect 106 -9 124 9
 << metal1 >>
-rect -87 582 160 597
-rect -87 564 14 582
-rect 32 564 60 582
-rect 78 564 106 582
-rect 124 564 160 582
-rect -87 549 160 564
+rect -87 481 160 496
+rect -87 463 14 481
+rect 32 463 60 481
+rect 78 463 106 481
+rect 124 463 160 481
+rect -87 448 160 463
 rect -87 226 -39 241
 rect -87 208 -72 226
 rect -54 208 -39 226
@@ -199,12 +173,12 @@ rect -87 -24 160 -9
 << labels >>
 flabel metal1 -87 -24 -39 24 1 FreeSans 200 0 0 0 VGND
 port 22 nsew ground bidirectional
+flabel metal1 -87 448 -39 496 1 FreeSans 200 0 0 0 VDPWR
+port 23 nsew power bidirectional
 flabel metal1 -87 193 -39 241 1 FreeSans 200 0 0 0 A
 port 24 nsew signal input
 flabel metal1 112 194 160 242 1 FreeSans 200 0 0 0 Y
 port 25 nsew signal output
-flabel metal1 -87 549 -39 597 1 FreeSans 200 0 0 0 VDPWR
-port 23 nsew power bidirectional
 << properties >>
 string FIXED_BBOX -107 -44 180 316
 string GDS_FILEBOUNDARY true

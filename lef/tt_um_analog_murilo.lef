@@ -34,40 +34,19 @@ MACRO tt_um_analog_murilo
   PIN ua[0]
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.715500 ;
+    ANTENNADIFFAREA 0.442800 ;
     PORT
-      LAYER li1 ;
-        RECT 142.700 13.460 143.040 15.310 ;
-        RECT 142.790 12.390 143.040 13.460 ;
-        RECT 142.790 11.910 143.580 12.390 ;
-        RECT 142.790 10.860 143.040 11.910 ;
-        RECT 142.700 10.230 143.040 10.860 ;
-      LAYER met1 ;
-        RECT 143.100 11.910 152.710 12.390 ;
-        RECT 144.020 11.900 152.710 11.910 ;
-      LAYER met2 ;
-        RECT 151.810 11.900 152.710 12.390 ;
-      LAYER met3 ;
-        RECT 151.810 11.900 152.710 12.390 ;
       LAYER met4 ;
-        RECT 151.810 0.000 152.710 12.390 ;
+        RECT 151.810 0.000 152.710 1.000 ;
     END
   END ua[0]
   PIN ua[1]
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.397500 ;
+    ANTENNAGATEAREA 0.246000 ;
     PORT
-      LAYER li1 ;
-        RECT 141.110 11.900 141.590 12.380 ;
-      LAYER met1 ;
-        RECT 132.490 11.900 141.600 12.380 ;
-      LAYER met2 ;
-        RECT 132.490 11.900 133.390 12.380 ;
-      LAYER met3 ;
-        RECT 132.490 11.900 133.390 12.380 ;
       LAYER met4 ;
-        RECT 132.490 0.000 133.390 12.380 ;
+        RECT 132.490 0.000 133.390 1.000 ;
     END
   END ua[1]
   PIN ua[2]
@@ -442,18 +421,6 @@ MACRO tt_um_analog_murilo
     DIRECTION INOUT ;
     USE POWER ;
     PORT
-      LAYER nwell ;
-        RECT 141.110 13.280 143.580 15.890 ;
-      LAYER li1 ;
-        RECT 141.980 15.610 143.360 15.790 ;
-        RECT 142.290 13.840 142.520 15.610 ;
-        RECT 141.650 13.460 142.520 13.840 ;
-      LAYER met1 ;
-        RECT 1.000 15.460 143.620 15.940 ;
-      LAYER met2 ;
-        RECT 1.000 15.460 3.000 15.940 ;
-      LAYER met3 ;
-        RECT 1.000 15.460 3.000 15.940 ;
       LAYER met4 ;
         RECT 1.000 5.000 3.000 220.760 ;
     END
@@ -462,22 +429,25 @@ MACRO tt_um_analog_murilo
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
-      LAYER pwell ;
-        RECT 141.110 9.740 143.580 10.970 ;
-      LAYER li1 ;
-        RECT 141.650 10.520 142.520 10.880 ;
-        RECT 142.290 10.060 142.520 10.520 ;
-        RECT 141.980 9.880 143.360 10.060 ;
-      LAYER met1 ;
-        RECT 4.000 9.730 143.620 10.210 ;
-      LAYER met2 ;
-        RECT 4.000 9.730 6.000 10.210 ;
-      LAYER met3 ;
-        RECT 4.000 9.730 6.000 10.210 ;
       LAYER met4 ;
         RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
+  OBS
+      LAYER nwell ;
+        RECT 140.770 6.390 143.240 11.490 ;
+      LAYER li1 ;
+        RECT 140.770 6.490 143.240 11.390 ;
+      LAYER met1 ;
+        RECT 1.000 6.330 152.710 11.550 ;
+      LAYER met2 ;
+        RECT 1.000 6.330 152.710 11.540 ;
+      LAYER met3 ;
+        RECT 1.000 6.330 152.710 11.540 ;
+      LAYER met4 ;
+        RECT 132.490 1.400 152.710 9.150 ;
+        RECT 133.790 1.000 151.410 1.400 ;
+  END
 END tt_um_analog_murilo
 END LIBRARY
 
