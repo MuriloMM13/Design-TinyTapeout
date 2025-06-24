@@ -34,7 +34,7 @@ MACRO tt_um_analog_murilo
   PIN ua[0]
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.442800 ;
+    ANTENNADIFFAREA 0.715500 ;
     PORT
       LAYER met4 ;
         RECT 151.810 0.000 152.710 1.000 ;
@@ -43,7 +43,7 @@ MACRO tt_um_analog_murilo
   PIN ua[1]
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.246000 ;
+    ANTENNAGATEAREA 0.397500 ;
     PORT
       LAYER met4 ;
         RECT 132.490 0.000 133.390 1.000 ;
@@ -435,11 +435,11 @@ MACRO tt_um_analog_murilo
   END VGND
   OBS
       LAYER nwell ;
-        RECT 140.770 6.390 143.240 11.490 ;
+        RECT 140.840 6.340 143.310 12.490 ;
       LAYER li1 ;
-        RECT 140.770 6.490 143.240 11.390 ;
+        RECT 140.840 6.480 143.310 12.390 ;
       LAYER met1 ;
-        RECT 1.000 6.330 152.710 11.550 ;
+        RECT 1.000 6.330 152.710 12.540 ;
       LAYER met2 ;
         RECT 1.000 6.330 152.710 11.540 ;
       LAYER met3 ;
