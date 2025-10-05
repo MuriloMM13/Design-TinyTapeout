@@ -1,35 +1,51 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
-# Tiny Tapeout Analog Project Template
+# SRAM Full-Custom Design – Tiny Tapeout Project
 
-- [Read the documentation for project](docs/info.md)
+## Overview
 
-## What is Tiny Tapeout?
+This repository contains the design and physical layout of a **full-custom SRAM cell**, developed using the **Tiny Tapeout** flow and fully **open-source tools**.  
+The project demonstrates the complete process — from schematic design to GDSII generation — enabling fabrication in **CMOS 130 nm technology (Sky130)**.
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+## Objectives
 
-To learn more and get started, visit https://tinytapeout.com.
+- Design and optimize a **full-custom SRAM** cell for educational and research purposes.  
+- Explore **analog and digital design principles** within a real fabrication workflow.  
+- Gain practical experience in the **Tiny Tapeout** open-source ASIC design flow.
 
-## Analog projects
+## Tools & Technologies
 
-For specifications and instructions, see the [analog specs page](https://tinytapeout.com/specs/analog/).
+- **Technology:** SkyWater **Sky130** (CMOS 130 nm)
+- **Tools used:** Magic, KLayout, Ngspice, OpenLane, and other Tiny Tapeout utilities
+- **Languages:** Verilog / SPICE
+- **Layout files:** GDS, LEF, and MAG views available in corresponding folders
 
-## Enable GitHub actions to build the results page
+## Repository Structure
 
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
+.
+├── docs/ → Technical documentation and design notes
+├── gds/ → Final GDSII layout files
+├── lef/ → Standard cell abstract views
+├── mag/ → Magic layout files
+├── src/ → Source code and SPICE netlists
+├── test/ → Simulation scripts and validation data
+└── README.md → Project overview
 
-## Resources
 
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
+## Results
 
-## What next?
+- Functional **Inverter cell** integrated within the Tiny Tapeout framework  
+- Verified with **electrical simulations** (read/write operations and stability tests)  
+- Compatible for manufacturing through the **Tiny Tapeout shuttle**
 
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@matthewvenn](https://twitter.com/matthewvenn)
+## Context
+
+This work was part of a training project in **microelectronics and circuit design**, focused on developing **full-custom logic cells** using open-source ASIC design flows.  
+It reflects hands-on experience in **layout conception, simulation, and verification** — essential steps in a professional R&D environment.
+
+## References
+
+- [Tiny Tapeout documentation](https://tinytapeout.com/)
+- [SkyWater SKY130 PDK](https://github.com/google/skywater-pdk)
+- [Magic VLSI](http://opencircuitdesign.com/magic/)
+- [KLayout](https://www.klayout.de/)
