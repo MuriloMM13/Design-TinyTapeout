@@ -4,12 +4,12 @@
 
 ## Overview
 
-This repository contains the design and physical layout of a **full-custom SRAM cell**, developed using the **Tiny Tapeout** flow and fully **open-source tools**.  
+This repository contains the design and physical layout of a **full-custom Inverter cell**, developed using the **Tiny Tapeout** flow and fully **open-source tools**.  
 The project demonstrates the complete process — from schematic design to GDSII generation — enabling fabrication in **CMOS 130 nm technology (Sky130)**.
 
 ## Objectives
 
-- Design and optimize a **full-custom SRAM** cell for educational and research purposes.  
+- Design and optimize a **full-custom Inverter** cell for educational and research purposes.  
 - Explore **analog and digital design principles** within a real fabrication workflow.  
 - Gain practical experience in the **Tiny Tapeout** open-source ASIC design flow.
 
@@ -21,7 +21,7 @@ The project demonstrates the complete process — from schematic design to GDSII
 - **Layout files:** GDS, LEF, and MAG views available in corresponding folders
 
 ## Repository Structure
-
+```
 .
 ├── docs/ → Technical documentation and design notes
 ├── gds/ → Final GDSII layout files
@@ -30,7 +30,7 @@ The project demonstrates the complete process — from schematic design to GDSII
 ├── src/ → Source code and SPICE netlists
 ├── test/ → Simulation scripts and validation data
 └── README.md → Project overview
-
+```
 
 ## Results
 
